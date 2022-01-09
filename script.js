@@ -110,9 +110,9 @@ function nexter() {
     drag2.style.display = "none";
     drag3.style.display = "none";
     drag4.style.display = "none";
-    drag5.src = "phase2/clean1.png";
-    drag6.src = "phase2/clean2.png";
-    drag7.src = "phase2/clean3.png";
+    drag5.src = "clean1.png";
+    drag6.src = "clean2.png";
+    drag7.src = "clean3.png";
   } else if (next == 5) {
       go = 0;
     info.style.display = "none";
@@ -195,10 +195,10 @@ function packing() {
   info.style.display = "none";
   bag.style.display = "flex";
   if (phase == 0) {
-    drag1.src = "phase1/food1.png";
-    drag2.src = "phase1/food2.png";
-    drag3.src = "phase1/food3.png";
-    drag4.src = "phase1/food4.png";
+    drag1.src = "food1.png";
+    drag2.src = "food2.png";
+    drag3.src = "food3.png";
+    drag4.src = "/food4.png";
     drag1.style.display = "flex";
     drag2.style.display = "flex";
     drag3.style.display = "flex";
