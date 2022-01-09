@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+* {
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+body {
+  background-color: var(--bkrd2);
+  background-size: cover;
+  overflow: hidden;
+}
+/*variables of colors*/
+:root {
+  --blue: #00076f;
+  --dpurple: #44008b;
+  --lpurple: #9f45b0;
+  --dpink: #e54ed0;
+  --lpink: #ffe4f2;
+  --bkrd1: #151531;
+  --bkrd2: #39beff;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: var(--bkrd1);
+}
+button:hover {
+  background-color: var(--bkrd2);
+}
+
+button {
+  background-color: var(--dpink);
+}
+/*styling for the ships and the choices*/
+#ship,
+#suit,
+#off {
+  justify-content: center;
+  display: flex;
+  margin-top: 5%;
+}
+.options {
+  background-color: var(--blue);
+  width: 300px;
+  height: 350px;
+  border-radius: 5%;
+  border: 3px solid black;
+  margin-right: 5%;
+  padding-top: 5%;
+}
+.options:hover {
+  background-color: var(--bkrd2);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/*styling for the info box*/
+#info {
+  justify-content: center;
+  display: block;
+  z-index: 10;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  background-color: var(--dpurple);
+  color: var(--lpink);
+}
+#info div{
+  position: relative;
+  width: 600px;
+  height: 300px;
+  color: var(--lpink);
+}
+#choice{
+  position: absolute;
+  left: auto;
+  width: 615px;
+  color: var(--lpink);
+}
+#text{
+  position: absolute;
+  left: 3%;
+  top: 25%;
+  font-size: x-large;
+  color: var(--lpink);
+}
+#info div button {
+  position: absolute;
+  left: 43%;
+  top: 80%;
+  width: 100px;
+  height: 50px;
+  font-size: large;
+}
+
+/*styling for destination*/
+#going {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+#moon {
+  background-image: url("moon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 25%;
+  font-size: x-large;
+}
+#mars {
+  background-image: url("mars.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 25%;
+  font-size: x-large;
+}
+#jupiter {
+  background-image: url("jupiter.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 25%;
+  font-size: x-large;
+}
+
+/*styling for packing the bag*/
+.grid {
+  margin-left: 10%;
+  display: grid;
+  row-gap: 10%;
+  column-gap: 10%;
+}
+#phase2 {
+  margin-left: 0%;
+}
+#drag1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+#drag2,
+#drag5 {
+  grid-column: 2;
+  grid-row: 1;
+}
+#done {
+  width: 300px;
+  height: 75px;
+  position: absolute;
+  font-size: large;
+  top: 85%;
+  right: 28%;
+}
+
+/*styling for blast off*/
+#off button{
+    border-radius: 50%;
+    background-color: var(--dpink);
+    width: 100px;
+    height: 100px;
+    font-size:larger;
+}
+
+/*responsivness*/
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/*styling for ending*/
+#ending{
+    margin-left: 17%;
+    position: absolute;
+}
+#ending img{
+    position: relative;
+    top: 30%;
+}
+#ending p{
+    position: relative;
+    width: 800px;
+    font-size: x-large;
+    top: 40%;
+}
+#ending button{
+    position: relative;
+    width: 100px;
+    height: 75px;
+    font-size: large;
+    top: 50%;
+}

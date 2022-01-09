@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Project Space Travel</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <!--Choose your ship-->
+    <div id="ship">
+        <div class="options" onclick="one()">
+            <!--Img of ship-->
+            <img src="11.png">
+        </div>
+        <div class="options" onclick="two()">
+            <!--Img of ship-->
+            <img src="endev.png">
+        </div>
+        <div class="options" style="margin-right:0%" onclick="three()">
+            <!--Img of ship-->
+            <img src="gem.png">
+        </div>
+    </div>
+    <!--Choose your suit-->
+    <div id="suit">
+        <div class="options" onclick="uno()">
+            <!--Img of ship-->
+            <img src="uno.png">
+        </div>
+        <div class="options" onclick="dos()">
+            <!--Img of ship-->
+            <img src="dos.png">
+        </div>
+        <div class="options" style="margin-right:0%" onclick="tres()">
+            <!--Img of ship-->
+            <img src="tres.png">
+        </div>
+    </div>
+    <!--Pack your bag-->
+    <div id="bag">
+        <img id="case" ondrop="drop(event)" ondragover="allowDrop(event)" src="">
+        <div class="grid">
+            <!--phase 1-->
+            <img src="" id="drag1" draggable="true" ondragstart="drag(event)">
+            <img src="" id="drag2" draggable="true" ondragstart="drag(event)">
+            <img src="" id="drag3" draggable="true" ondragstart="drag(event)">
+            <img src="" id="drag4" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="grid" id="phase2">
+            <!--phase 2-->
+            <img src="" id="drag5" draggable="true" ondragstart="drag(event)">
+            <img src="" id="drag6" draggable="true" ondragstart="drag(event)">
+            <img src="" id="drag7" draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <button id="done" onclick="dones()">Done</button>
+    </div>
+    <!--Choose your destination-->
+    <div id="going">
+        <button class="options" id="moon" onclick="moons()">Moon</button>
+        <button class="options" id="mars" onclick="marss()">Mars</button>
+        <button class="options" id="jupiter" onclick="jupiters()">Jupiter</button>
+    </div>
+    <!--Blast off-->
+    <div id="off">
+        <div>
+            <img id="suitc" draggable="true" ondragstart="drag(event)" src="">
+            <img src="fulsc.png" id="ree" draggable="true" ondragstart="drag(event)">
+        </div>
+        <img id="shipc" ondrop="drop(event)" ondragover="allowDrop(event)" src="">
+        <button id="gege" onclick="start()">Blast Off</button>
+    </div>
+    <!--Info box-->
+    <div id="info">
+        <div>
+            <h1 id="choice"></h1>
+            <p id="text"></p>
+            <button onclick='nexter()'>Next</button>
+        </div>
+    </div>
+    <!--ending html-->
+    <div id="ending">
+        <img src="gj.png">
+        <p>Congratulations!! Your trip was a success!!! You brought a rock with you and found a new bacteria!!! Did you learn about space travel?</p>
+        <button onclick="home()">Home</button>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

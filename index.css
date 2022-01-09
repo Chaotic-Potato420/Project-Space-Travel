@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+*{
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+body{
+    background-image: url('back.png');
+}
+#buttons{
+    position: absolute;
+    top:75%;
+    left: 23%;
+}
+button{
+    width: 200px;
+    height: 125px;
+    margin-right: 10px;
+    font-size: x-large;
+    background-color: #39beff;
+}
+button:hover{
+    background-color: #ffe4f2;
+}
+
+#credits{
+    margin-top: 30%;
+    background-color: #ffe4f2;
+}
+#credits button{
+    height: 50px;
+    margin-bottom: 25px;
+}
